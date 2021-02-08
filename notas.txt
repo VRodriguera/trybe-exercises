@@ -1,0 +1,2 @@
+não esquecer da aula ao vivo.
+git status

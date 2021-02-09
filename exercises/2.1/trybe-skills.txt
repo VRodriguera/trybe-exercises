@@ -5,4 +5,5 @@ O que eu vou aprender na Trybe:
 - Git
 - html
 - css
-react
+- react
+- front

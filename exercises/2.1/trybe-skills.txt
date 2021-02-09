@@ -6,4 +6,7 @@ O que eu vou aprender na Trybe:
 - html
 - css
 - react
+trybe-skills-updates
 - front
+=======
+master

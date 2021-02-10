@@ -1,1 +1,2 @@
-vini magavilhoso
+Local de atividades do curso
+

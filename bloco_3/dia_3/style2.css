@@ -1,21 +1,32 @@
 .super-mario{
-
-width: 150px;
+width: 200px;
+position: absolute;
+z-index: 1;
 }
 .goomba{
-
 width: 100px;
+position: absolute;
+left: 300px;
+margin-top: 160px;
+z-index: 2;
 }
 .baloon{
-
-width: 90px;
+width: 130px;
+position: absolute;
+left: 250px;
+margin-top: 50px;
+z-index: 3;
 }
 .word{
-
-width: 70px ;
+width: 10px ;
+position: absolute;
+left: 280px;
+margin-top: 55px;
+z-index: 4;
 }
 .bowser{
-
 width: 250px;
-
+position:absolute;
+left: 400px;
+z-index: 5;
 }

@@ -17,3 +17,6 @@ ol{
 .primo{
     text-transform: uppercase;
 }
+h1, h3{
+    color: red;
+}

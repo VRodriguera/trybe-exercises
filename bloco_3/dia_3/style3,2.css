@@ -1,4 +1,18 @@
 div:hover{
  margin-left: 30px;    
-    
+}
+div:nth-last-child(5){
+    background-color: red;
+}
+div:nth-last-child(4){
+    background-color: salmon;
+}
+div:nth-last-child(3){
+    background-color:green;
+}
+div:nth-last-child(2){
+    background-color: blue;
+}
+div:nth-last-child(1){
+    background-color:yellow;
 }

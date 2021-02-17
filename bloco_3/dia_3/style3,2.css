@@ -6,21 +6,26 @@ div:hover{
 div:nth-last-child(5){
     background-color: #7400b8;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 div:nth-last-child(4){
     background-color: #6930c3;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 div:nth-last-child(3){
     background-color: #5e60ce;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+    font-style: italic;
 }
 div:nth-last-child(2){
     background-color: #5390d9;
     color: cornsilk ;
+
 }
 div:nth-last-child(1){
     background-color:#4ea8de;
     color: black;
+    font-style: italic;
 }

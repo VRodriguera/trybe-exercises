@@ -30,3 +30,9 @@ li{
 li em{
     font-weight: bold;
 }
+.cor{
+    color: blue;
+}
+.fundo{
+    background-color: pink;
+}

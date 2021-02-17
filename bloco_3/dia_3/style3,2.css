@@ -4,22 +4,23 @@ div:hover{
     border-color: black;     
 }
 div:nth-last-child(5){
-    background-color: red;
+    background-color: #7400b8;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 div:nth-last-child(4){
-    background-color: salmon;
+    background-color: #6930c3;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 div:nth-last-child(3){
-    background-color:green;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    background-color: #5e60ce;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
 div:nth-last-child(2){
-    background-color: blue;
+    background-color: #5390d9;
     color: cornsilk ;
 }
 div:nth-last-child(1){
-    background-color:yellow;
+    background-color:#4ea8de;
     color: black;
 }

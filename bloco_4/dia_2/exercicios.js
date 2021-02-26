@@ -25,7 +25,7 @@ let resultado = 0;
 //console.log(total);
 //console.log(media)
 
-// exercicio 6
+// exercicio 6.
 
 for(let i = 0; i < numbers.length; i++){
     if(numbers[i] % 2 != 0){

@@ -1,6 +1,7 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let total = 0;
-let maior = 0;
+let maior = numbers[0];
+let menor = numbers[0];
 let resultado = 0;
 //for(let i = 0; i < numbers.length; i++){
    //total += numbers[i]
@@ -25,7 +26,7 @@ let resultado = 0;
 //console.log(total);
 //console.log(media)
 
-// exercicio 6.
+/*exercicio 6.
 
 for(let i = 0; i < numbers.length; i++){
     if(numbers[i] % 2 != 0){
@@ -37,4 +38,14 @@ if(resultado == 0){
 }
 else{
     console.log(resultado)
+}*/
+
+/*exercicio 7.
+
+for(let i = 0; i < numbers.length; i++){
+    if(numbers[i] < menor){
+        menor = numbers[i]
+    }
 }
+console.log(menor)*/
+

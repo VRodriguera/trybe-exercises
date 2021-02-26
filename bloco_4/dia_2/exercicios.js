@@ -4,8 +4,19 @@ let total = 0;
 for(let i = 0; i < numbers.length; i++){
    total += numbers[i]
 }
-//console.log(numbers.length); 
-//console.log(total);
+
 let media = total / numbers.length
 
-console.log(media)
+if(media > 20){
+    console.log('valor maior que 20')
+}
+else{
+    console.log('valor menor que 20')
+}
+
+
+
+
+//console.log(numbers.length); 
+//console.log(total);
+//console.log(media)

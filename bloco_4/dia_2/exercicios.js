@@ -49,3 +49,12 @@ for(let i = 0; i < numbers.length; i++){
 }
 console.log(menor)*/
 
+/*exercicio 8
+
+let num = [];
+
+for(let i = 0; i < 25; i++){
+    num[i] = i + 1; 
+} 
+console.log(num)*/
+

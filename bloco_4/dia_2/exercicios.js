@@ -4,6 +4,8 @@ let total = 0;
 for(let i = 0; i < numbers.length; i++){
    total += numbers[i]
 }
+//console.log(numbers.length); 
+//console.log(total);
+let media = total / numbers.length
 
-console.log(numbers); 
-console.log(total);
+console.log(media)

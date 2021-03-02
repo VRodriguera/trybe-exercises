@@ -11,7 +11,7 @@ let info2 = {
     recorrente: "sim",
 };
 
-//console.log('Bem vinda, ' + info.personagem);
+//console.log('Bem vinda, ' + info.personagem)
 
 for (let i in info) {
     //console.log(info)

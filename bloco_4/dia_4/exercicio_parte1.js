@@ -30,11 +30,3 @@ for (let i in info) {
         console.log(info[i] + ' e ' + info2[i])
     }   
 }
-
-/*ambosRecorentes (info.recorrente, info2.recorrente)
-
-function ambosRecorentes (a , b) {
-    if (a == "sim" && b == "sim"){
-     console.log('Ambos recorrentes')
-    }
-}*/

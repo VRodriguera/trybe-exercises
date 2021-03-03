@@ -1,0 +1,1 @@
+document.getElementsByClassName('cor')[0].style.color = 'red';

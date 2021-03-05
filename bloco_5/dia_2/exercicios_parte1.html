@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="itens">
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+    let item1 = document.querySelector('#itens');
+         let tag1 = document.createElement('h1');
+         tag1.setAttribute('class','title');
+         item1.appendChild(tag1);
+         tag1.innerText = 'Exercício 5.2 - JavaScript DOM';
+
+    let item2 = document.querySelector('#itens');
+         let tag2 = document.createElement('div');
+         tag2.setAttribute('class','main-content');
+         item2.appendChild(tag2);
+         tag2.innerText = 'Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Cevadis im ampola pa arma uma pindureta. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.';
+    
+    let item3 = document.querySelector('.main-content');
+         let tag3 = document.createElement('div');
+         tag3.setAttribute('class','center-content');
+         item3.appendChild(tag3);
+         tag3.innerText = 'Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi.'
+    
+    let item4 = document.querySelector('.center-content');
+         let tag4 = document.createElement('p');
+         tag4.setAttribute('id','paragrafo');
+         item4.appendChild(tag4);
+         tag4.innerText = 'Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga.'
+
+    let item5 = document.querySelector('.main-content');
+         let tag5 = document.createElement('div');
+         tag5.setAttribute('class','left-content');
+         item5.appendChild(tag5);
+         tag5.innerText = 'Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Quem manda na minha terra sou euzis! Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Aenean aliquam molestie leo, vitae iaculis nisl.'
+    
+    let item6 = document.querySelector('.main-content');
+         let tag6 = document.createElement('div');
+         tag6.setAttribute('class','right-content');
+         item6.appendChild(tag6);
+         tag6.innerText = 'Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.'
+         
+    let item7 = document.querySelector('.left-content');
+         let tag7 = document.createElement('img');
+         tag7.setAttribute('class','small-image');
+         tag7.src = 'https://picsum.photos/200';
+         item7.appendChild(tag7);
+
+    let item8 = document.querySelector('.right-content');
+         let tag8 = document.createElement('ul');
+         tag8.setAttribute('id','lista');
+         item8.appendChild(tag8);
+
+    let itemLi = document.querySelector('#lista');
+         let tagLi = document.createElement('li');
+         itemLi.appendChild(tagLi).innerText = '1';
+
+         for (let index = 2; index < 11; index += 1) {
+            
+             tagLi = document.createElement('li');
+             itemLi.appendChild(tagLi).innerText = '' + index;
+         }
+         
+    let item9 = document.querySelector('.main-content');
+         let tag9 = document.createElement('h3');
+         item9.appendChild(tag9);
+
+         for (let index = 0; index < 2; index += 1) {
+            
+            tag9 = document.createElement('h3');
+            item9.appendChild(tag9);
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

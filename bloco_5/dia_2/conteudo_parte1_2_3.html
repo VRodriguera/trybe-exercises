@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscando elementos</title>
+</head>
+<body id="itens">
+    
+<div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+
+  
+
+</body>
+
+    <script>
+        //parte um//
+
+         document.getElementById('elementoOndeVoceEsta');
+         document.getElementById('elementoOndeVoceEsta').parentNode.style.color = 'red'; 
+         document.getElementById('primeiroFilho').innerText = 'Eu sou o primeiro filho!';
+         document.querySelector('#pai').childNodes[0];
+         document.getElementById('elementoOndeVoceEsta').previousElementSibling;
+         document.getElementById('elementoOndeVoceEsta').parentNode.parentNode;
+         document.getElementById('elementoOndeVoceEsta').nextElementSibling;
+         document.querySelector('#pai').childNodes[3];
+
+        //parte dois//
+
+         let selectionElement1 = document.querySelector('#elementoOndeVoceEsta').parentNode;//variavel para selecionar o elemento que ira receber um filho//
+         let creatSibling1 = document.createElement('div');//variavel para criar a tag que sera o filho do nosso elemento//
+         selectionElement1.appendChild(creatSibling1);//adiciona ao nosso elemento a teg filho//
+    
+         let selectionElement2 = document.querySelector('#elementoOndeVoceEsta');
+         let creatSibling2 = document.createElement('div');
+         selectionElement2.appendChild(creatSibling2);
+    
+         let selectionElement3 = document.querySelector('#primeiroFilhoDoFilho');
+         let creatSibling3 = document.createElement('div');
+         creatSibling3.setAttribute('id','maisUmFilho') //adiciona um id a nossa tag(nossa div criada)//
+         selectionElement3.appendChild(creatSibling3);
+    
+         let acesso = document.querySelector('#maisUmFilho').parentNode.parentNode.nextElementSibling;
+         console.log(acesso)
+    
+         //parte tres//
+    
+         let itensDaLista = document.getElementById('paiDoPai');
+         itensDaLista.remove();
+    
+         let item1 = document.querySelector('#itens');
+         let tag1 = document.createElement('div');
+         tag1.setAttribute('id','pai')
+         item1.appendChild(tag1);
+
+         let item2 = document.querySelector('#pai');
+         let tag2 = document.createElement('div');
+         tag2.setAttribute('id','elementoOndeVoceEsta')
+         item2.appendChild(tag2);
+
+         let item3 = document.querySelector('#elementoOndeVoceEsta');
+         let tag3 = document.createElement('div');
+         tag3.setAttribute('id','primeiroFilhoDoFilho')
+         item3.appendChild(tag3);
+         
+    </script>
+
+</html>

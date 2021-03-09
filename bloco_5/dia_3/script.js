@@ -49,7 +49,9 @@ btn1.setAttribute('id', 'btn-holiday');
 botao1.appendChild(btn1);
 btn1.innerText = 'Feriados';
 
-const botao = document.querySelector('#btn-holiday');//const para definir quem e meu botao
+//exercicio 3//
+
+let botao = document.querySelector('#btn-holiday');//const para definir quem e meu botao
 let interruptor = false;
 let feriados = [25, 25, 31];
 
@@ -68,9 +70,149 @@ function colorHolidays() {//funçao que define qual cor de fundo os feriados vao
         }
     }
 }
-    botao.addEventListener("click", colorHolidays);
+botao.addEventListener("click", colorHolidays);
 
-//exercicio 3//
+//exercicio 4//
 
+let botao2 = document.querySelector('.buttons-container');
+let btn2 = document.createElement('BUTTON');
+btn2.setAttribute('id', 'btn-friday');
+botao2.appendChild(btn2);
+btn2.innerText = 'Sexta-feira';
 
+let Botao = document.querySelector('#btn-friday');//const para definir quem e meu botao
+let interruptor2 = false;
+let sextas = [4, 11, 18, 25];
 
+//exercicio 5//
+
+function textFriday() {//funçao que define qual texto as sextar vao receber 
+
+    if (interruptor2 == false) {
+        for (let jindex = 0; jindex < sextas.length; jindex += 1) {
+            interruptor2 = true;
+            document.getElementsByClassName('friday')[jindex].innerText = 'Dia de Maldade';
+        }
+    }
+    else if (interruptor2 == true) {
+        for (let jindex = 0; jindex < sextas.length; jindex += 1) {
+            interruptor2 = false;
+            document.getElementsByClassName('friday')[jindex].innerText = sextas[jindex];
+        }
+    }
+}
+Botao.addEventListener("click", textFriday);
+
+//exercicio 6//
+
+function dayZoom() {
+    let days = document.querySelector('#days');
+
+    days.addEventListener('mouseover', function (event) {
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight = '600';
+    })
+};
+
+function dayNoZoom() {
+    let days = document.querySelector('#days');
+
+    days.addEventListener('mouseout', function (event) {
+        event.target.style.fontWeight = '200';
+        event.target.style.fontSize = '20px';
+    })
+};
+dayZoom()
+dayNoZoom()
+
+//exercicio 7//
+
+function tasks (nomeDaTarefa) {
+    let varPai = document.getElementsByClassName('my-tasks')[0];
+    let varSon = document.createElement('SPAN');
+    varSon.setAttribute('class', 'task');
+    varSon.innerText = nomeDaTarefa;
+    varPai.appendChild(varSon);
+    
+}
+tasks('cozinhar');
+
+//exercicio 8//
+
+function newTaskDiv(color) {
+
+    let tasksContainer = document.querySelector('.my-tasks');
+    let newTask = document.createElement('div');
+  
+    newTask.className = 'task';
+    newTask.style.backgroundColor = color;
+    tasksContainer.appendChild(newTask);
+  };
+  
+  newTaskDiv('green');
+
+//exercicio 9//copiado do gabario por estar muito atrasado
+
+function setTaskClass() {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let myTasks = document.querySelector('.task');
+  
+    myTasks.addEventListener('click', function(event) {
+      if (selectedTask.length === 0) {
+        event.target.className = 'task selected';
+      } else {
+        event.target.className = 'task';
+      }
+    });
+  };
+  
+  setTaskClass();
+//exercicio 10//copiado do gabario por estar muito atrasado
+function setDayColor() {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let days = document.querySelector('#days');
+    let taskDiv = document.querySelector('.task');
+    let taskColor = taskDiv.style.backgroundColor;
+    
+    days.addEventListener('click', function(event){
+      let eventTargetColor = event.target.style.color;
+      if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+        let color = selectedTask[0].style.backgroundColor;
+        event.target.style.color = color;
+      } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+        event.target.style.color = 'rgb(119,119,119)';
+      }
+    });
+  };
+  //exercicio 11//copiado do gabario por estar muito atrasado
+  setDayColor();
+
+  function addNewTask() {
+    let getInputField = document.querySelector('#task-input');
+    let addInputButton = document.querySelector('#btn-add');
+    let getTaskList = document.querySelector('.task-list');
+  
+    addInputButton.addEventListener('click', function() {
+      if (getInputField.value.length > 0) {
+        let newLi = document.createElement('li');
+        newLi.innerText = getInputField.value;
+  
+        getTaskList.appendChild(newLi);
+        getInputField.value = '';
+      } else {
+        alert('Error: Digite ao menos 1 caractere.');
+      }
+    })
+  
+    getInputField.addEventListener('keyup', function(event) {
+      if (event.keyCode === 13 && getInputField.value.length > 0) {
+        let newLi = document.createElement('li');
+        newLi.innerText = getInputField.value;
+  
+        getTaskList.appendChild(newLi);
+        getInputField.value = '';
+      }
+    });
+  };
+  
+  addNewTask();

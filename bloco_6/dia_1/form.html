@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <fieldset>
+
+        <p>Nome:</p>
+        <input type="text" value="" required maxlength="40">
+        <br/>
+        <p>Email:</p>
+        <input type="text" value="" required maxlength="50">
+        <br/>
+        <p>CPF:</p>
+        <input type="text" value="" required maxlength="11">
+        <br/>
+        <p>Endereço:</p>
+        <input type="text" value="" required maxlength="200">
+        <br/>
+        <p>Cidade:</p>
+        <input type="text" value="" required maxlength="28">
+        <br/>
+        <p>Estado:</p>
+        <select name="Estados" id="estados" required></select>
+        <br/>
+        <p>Residencia:</p>
+        <label for="residencia1">
+        Apartamento <input type="radiobutton" id="residencia1" name="residencia" value="" required>
+        </label>
+        <label for="residencia2">
+        Casa <input type="radiobutton" id="residencia2" name="residencia" value="" required>
+        </label>
+    
+    </fieldset>
+</body>
+<script src="script.js"></script>
+</html>

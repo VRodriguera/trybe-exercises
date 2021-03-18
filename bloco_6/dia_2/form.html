@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src=" https://cdn.jsdelivr.net/npm/pikaday/pikaday.js "></script>   
+</head>
+
+<body>
+    <form class="container" id="form">
+        <fieldset>
+
+            <p>Nome:</p>
+            <input class="input is-link" type="text" value="" required maxlength="40">
+            <br />
+            <p>Email:</p>
+            <input class="input is-link" type="text" value="" required maxlength="50">
+            <br />
+            <p>CPF:</p>
+            <input class="input is-link" type="text" value="" required maxlength="11">
+            <br />
+            <p>Endereço:</p>
+            <input class="input is-link" type="text" value="" required maxlength="200">
+            <br />
+            <p>Cidade:</p>
+            <input class="input is-link" type="text" value="" required maxlength="28">
+            <br />
+            <p>Estado:</p>
+            <select class="select" name="Estados" id="estados" required></select>
+            <br />
+            <p>Residencia:</p>
+            <label for="residencia1">
+                <input type="radio" id="residencia1" name="residencia" value="" required> Apartamento
+            </label>
+
+            <label for="residencia2">
+                <input type="radio" id="residencia2" name="residencia" value="" required> Casa
+            </label>
+
+        </fieldset>
+        <br>
+        <fieldset>
+
+            <p>Resumo do currículo:</p>
+            <textarea class="textarea is-link" name="resumo curriculo" id="textarea-1" cols="30" rows="10" required
+                maxlength="1000"></textarea>
+            <br>
+            <p>Cargo:</p>
+            <input class="input is-link" type="text" value="" required maxlength="40">
+            <br>
+            <p>Descrição do cargo:</p>
+            <input class="input is-link" type="text" value="" required maxlength="500">
+            <br>
+            <p>Data de início:</p>
+            <input class="input is-link theme" type="text" id="datepicker" required>
+
+        </fieldset>
+        <br>
+
+        <p id="paragrafoItem">Meu curriculo</p>
+
+        <button class="button" type="button" id="submit">Enviar formulario</button>
+        <button class="button" type="button" id="clearForm">Limpar</button>
+    </form>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,31 @@
+Métodos de afirmação
+
+Method	                           Description
+
+assert()	                       Verifica se um valor é verdadeiro. O mesmo que assert.ok ()
+
+deepEqual()	                       Verifica se dois valores são iguais
+
+deepStrictEqual()	               Verifica se dois valores são iguais, usando o operador de igual estrito (===)
+
+doesNotThrow()
+
+equal()	                           Verifica se dois valores são iguais, usando o operador igual (==)
+
+fail()	                           Lança um erro de afirmação
+
+ifError()	                       Lança um erro especificado se o erro especificado for avaliado como verdadeiro
+
+notDeepEqual()	                   Verifica se dois valores não são iguais
+
+notDeepStrictEqual()	           Verifica se dois valores não são iguais, usando o operador estrito diferente (! ==)
+
+notEqual()	                       Verifica se dois valores não são iguais, usando o operador diferente (! =)
+
+notStrictEqual()	               Verifica se dois valores não são iguais, usando o operador estrito diferente (! ==)
+
+ok()	                           Verifica se um valor é verdadeiro
+
+strictEqual()	                   Verifica se dois valores são iguais, usando o operador de igual estrito (===)
+
+throws()	 

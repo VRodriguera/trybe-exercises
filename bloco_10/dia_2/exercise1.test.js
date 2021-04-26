@@ -3,7 +3,7 @@ const uppercase = (str, callback) => {
 };
 
 test('testa a chamada da funcação callback', (done) => {
-  upperCase('test', (str) => {
+  uppercase('test', (str) => {
     expect(str).toBe('TEST');
     done();
   })

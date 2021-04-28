@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-image: url(http://supernovo.net/wp-content/uploads/2013/10/Mapa-pokemon-x-e-y.jpg);
+}
+
+.myPokemon {
+  background-color: rgba(251, 255, 0, 0.425);
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(8px);
+  border : 2px solid yellow;
+  border-radius : 20px;
+  width: 150px;
+  margin: 2px;
+}
+
+.myCards {
+  display: flex;
+  justify-content:center;
+  max-width: 500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+

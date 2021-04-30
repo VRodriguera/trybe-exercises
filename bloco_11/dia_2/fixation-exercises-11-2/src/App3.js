@@ -22,7 +22,7 @@ class App3 extends React.Component {
 
     return (
       <div className="App">
-        {users.map(user => <UserProfile user={user} key={user.id}/>)}
+        {users.map(user => <UserProfile user={user} key={user.id} />)}
       </div>
     );
   }

@@ -1,0 +1,3 @@
+Exercicio desenvolvido usando um fork em um reposito da trybe, o objetivo era usar requisição em api dentro da função nativa do react a componentDidMount() 
+exercicio aqui : https://github.com/VRodriguera/exercise-dog-image
+

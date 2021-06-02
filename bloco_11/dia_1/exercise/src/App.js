@@ -1,14 +1,14 @@
 
 import './App.css';
 
-const tasks = ['Estudar', 'Limpar casa', 'Lavar carro', 'Limpar a gaiola do hamster']
+const tasks = ['Estudar', 'Limpar casa', 'Lavar carro', 'Limpar a gaiola do hamster', '123']
 
-const task = () => {
+const Task = () => {
   return tasks.map((task) => <li>{task}</li>);
 }
 
 function App() {
-  return <ol>{task()}</ol>;
+  return <ol><Task/></ol>;
 }
 
 export default App;

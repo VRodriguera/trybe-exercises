@@ -6,8 +6,8 @@ class home extends Component {
     return (
       <>
       <header>
-        <Link to="/login" />
-        <Link to="/register" />
+        <Link to="/login">login</Link>
+        <Link to="/register">register</Link>
       </header>
       <h2>Home</h2>
       </>

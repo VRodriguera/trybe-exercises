@@ -1,49 +1,71 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { register } from '../actions/index';
+import { Link } from 'react-router-dom';
 
 class Register extends Component {
+  constructor(props) {
+    super(props)
 
-  infos = () => {
-    return {
-      name: document.querySelector('#nome').value,
-      age: document.querySelector('#idade').value,
-      email: document.querySelector('#email').value,
+    this.state = {
+      name: '',
+      age: '',
+      email: ''
     }
   }
+
+infos = () => {
+  const { name, age, email } = this.state;
+  return { name, age, email }
+}
+
+handleChange = ({target}) => {
+  this.setState({
+    [target.id]: target.value
+  })
+}
+
+handleSubmit = (e) => {
+  const { addUser } = this.props;
+  e.preventDefault()
+  addUser(this.infos())
+  this.setState({
+    name: '',
+    age: '',
+    email: ''
+  })
+}
+
   render() {
-    const { addUser, state } = this.props;
+    const { name, age, email } = this.state;
     return (
       <div>
         <h2>Cadastrar</h2>
         <form>
-          <label htmlFor="nome">
-            <input id="nome" type="text" placeholder="Nome" />
+          <label htmlFor="name">
+            <input id="name" type="text" placeholder="Nome" value={ name } onChange={this.handleChange}/>
           </label>
-          <label htmlFor="idade">
-            <input id="idade" type="text" placeholder="Idade" />
+          <label htmlFor="age">
+            <input id="age" type="text" placeholder="Idade" value={ age } onChange={this.handleChange}/>
           </label>
           <label htmlFor="email">
-            <input id="email" type="text" placeholder="Email" />
+            <input id="email" type="text" placeholder="Email" value={ email } onChange={this.handleChange}/>
           </label>
           <button
-            type="button"
-            onClick={addUser([...state, this.infos])}
+            type="submit"
+            onClick={(e) => this.handleSubmit(e)}
           >
           cadastrar
           </button>
+          <Link to="/registeredCustomers">Lista de usuarios</Link>
         </form>
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => ({
-  state: state,
-})
-
 const mapDispathToProps = (dispath) => ({
-  addUser: state => dispath(register(state))
+  addUser: newUser => dispath(register(newUser))
 })
 
-export default connect(mapStateToProps, mapDispathToProps)(Register);
+export default connect(null, mapDispathToProps)(Register);

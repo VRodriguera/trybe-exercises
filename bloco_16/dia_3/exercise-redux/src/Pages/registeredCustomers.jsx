@@ -21,7 +21,7 @@ class registeredCustomers extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  usersInfo: state.usersRegister,
+  usersInfo: state.generalReducer,
 })
 
 export default connect(mapStateToProps, null)(registeredCustomers);

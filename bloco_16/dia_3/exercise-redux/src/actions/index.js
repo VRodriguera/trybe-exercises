@@ -6,7 +6,7 @@ export const login = (payload) => ({
   payload,
 });
 
-export const register = (payload) => ({
+export const register = (newUser) => ({
   type: 'REGISTER',
-  payload,
+  payload: newUser,
 });

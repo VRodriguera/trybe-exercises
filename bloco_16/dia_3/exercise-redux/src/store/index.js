@@ -4,7 +4,7 @@ import rootReducer from '../reducers/index';
 
 const store = createStore(
     rootReducer,
-    composeWithDevTools,
+    composeWithDevTools(),
 )
 
 export default store;

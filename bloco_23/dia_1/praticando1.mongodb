@@ -1,0 +1,3 @@
+use('Praticando_mongoDB')
+
+db.userInfo.insertOne({'nome': 'Rafael'});

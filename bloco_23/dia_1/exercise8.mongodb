@@ -1,0 +1,3 @@
+use('sample');
+
+db.books.find( { status: 'PUBLISH' } ).count();

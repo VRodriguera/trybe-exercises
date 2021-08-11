@@ -1,0 +1,3 @@
+use('superheroes');
+
+db.heroes.count({ 'aspects.hairColor': { $in: [ "Black", "No Hair" ] } });

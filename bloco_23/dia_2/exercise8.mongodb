@@ -1,0 +1,3 @@
+use('superheroes');
+
+db.heroes.count({ 'aspects.eyeColor': 'blue' });

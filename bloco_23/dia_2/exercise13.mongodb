@@ -1,0 +1,8 @@
+use('superheroes');
+
+db.heroes.find({
+  $or: [
+  {'aspects.height': { $lt: 180 }},
+  {race: { $ne: 'Human'}}
+  ]
+  });

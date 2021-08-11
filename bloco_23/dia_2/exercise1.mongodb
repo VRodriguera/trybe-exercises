@@ -1,0 +1,3 @@
+use('superheroes');
+
+db.heroes.find().limit(1).pretty();

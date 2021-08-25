@@ -1,0 +1,6 @@
+use('ExercisesTrybe');
+
+db.movies.updateOne(
+  { title: "Home Alone" },
+  { $set: { budget: 1, imdbRating: 5.5 }}
+);

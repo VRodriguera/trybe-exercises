@@ -1,0 +1,6 @@
+use('ExercisesTrybe');
+
+db.movies.updateOne(
+  { title: "Godzilla" },
+  { $set: { budget: 1}}
+);
